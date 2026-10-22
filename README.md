@@ -20,7 +20,7 @@ Responsive static website for OTT Recovery Breakdown: the redesigned home page p
 | `/about-ott-recovery-breakdown/` | About |
 | `/contact/` | Contact and quote request |
 
-Paths match the original site, so existing Google rankings and links carry over when this replaces it. The original "News" page had no posts and has not been recreated.
+Every page is a single file at the top level (e.g. `towing.html`), so the site can be uploaded to GitHub without folders. Canonical tags still point to the original page addresses on www.ottrecoverybreakdown.ie.
 
 ## Run locally
 
