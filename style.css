@@ -75,3 +75,62 @@
 .drop-toggle span{display:inline-block;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translate(-2px,-2px);font-size:0;transition:transform .2s}
 .drop-toggle[aria-expanded=true] span{transform:rotate(-135deg) translate(-1px,-1px)}
 @media(max-width:760px){.drop-toggle{height:44px}}
+/* ---- Fleet photos, audiences and commercial page ---- */
+.real-photo{filter:brightness(.78) saturate(.92)}
+.page-hero .real-photo{object-position:center 55%}
+.hero-trade{display:inline-flex;align-items:center;gap:12px;margin-top:22px;font-size:13px;font-weight:600;color:#e2e2e3;padding:8px 16px 8px 8px;border:1px solid #ffffff26;border-radius:100px;background:#10111299;min-height:44px}
+.hero-trade .tag{background:#f5f4f1;color:#101112;border-radius:100px;padding:6px 11px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.hero-trade:hover{border-color:#ff6570;color:#fff}
+.drop-sep{margin:8px 6px 2px;padding-top:10px;border-top:1px solid #ffffff16}
+.drop-sep span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#a3a4a7;padding:0 8px}
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:10px}
+.aud-card{position:relative;min-height:540px;border-radius:26px;overflow:hidden;display:flex;align-items:flex-end;isolation:isolate;border:1px solid #ffffff0d}
+.aud-card picture,.aud-card>img{position:absolute;inset:0;z-index:-2}
+.aud-card img{width:100%;height:100%;object-fit:cover}
+.aud-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#10111233 0%,#101112b3 45%,#101112f5 75%,#101112 100%)}
+.aud-card.trade:after{background:linear-gradient(180deg,#1011121a 0%,#101112a6 40%,#101112f2 72%,#101112 100%)}
+.aud-card.trade>img{filter:brightness(.85) saturate(.95)}
+.aud-body{padding:34px;width:100%}
+.aud-body h3{font-size:36px;margin:14px 0}
+.aud-body>p{font-size:14px;color:#cfd0d2;max-width:440px}
+.aud-links{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-wrap:wrap;gap:8px}
+.aud-links a{display:inline-block;font-size:12px;font-weight:600;padding:10px 14px;border-radius:100px;background:#ffffff14;border:1px solid #ffffff1f}
+.aud-links a:hover{background:#ffffff26}
+.aud-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.aud-card.trade .small-label{color:#ffd2d6}
+.fleet-grid{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:auto auto;gap:22px;margin-top:20px}
+.fleet-grid figure{margin:0;position:relative;border-radius:22px;overflow:hidden;background:#1d1f21}
+.fleet-grid img{width:100%;height:100%;object-fit:cover;filter:saturate(.92)}
+.fleet-a,.fleet-c{aspect-ratio:16/10}
+.fleet-b{grid-row:span 2}
+.fleet-grid figure:after{content:"";position:absolute;inset:auto 0 0;height:55%;background:linear-gradient(transparent,#101112e6)}
+.fleet-grid figcaption{position:absolute;left:24px;right:24px;bottom:20px;z-index:1;display:flex;flex-direction:column;gap:4px}
+.fleet-grid figcaption strong{font-size:18px;letter-spacing:-.02em}
+.fleet-grid figcaption span{font-size:12px;color:#c6c7ca}
+.media-split{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+.media-split.reverse .media-photo{order:2}
+.media-photo{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:#1d1f21;mask-image:linear-gradient(to bottom,#000 70%,#000d)}
+.media-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.92)}
+#why .media-photo{aspect-ratio:1/1}
+#why .media-photo img{object-position:center 30%}
+.truck-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.photo-card{border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#1e2022,#141516);border:1px solid #ffffff0d;display:flex;flex-direction:column}
+.photo-card img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:saturate(.92)}
+.photo-card>div{padding:26px 28px 30px}
+.photo-card h3{font-size:26px;letter-spacing:-.03em;margin:12px 0}
+.photo-card p{font-size:14px;margin:0}
+.trade-cards{grid-template-columns:1fr}
+.service-card.photo-card{padding:0;min-height:0;display:grid;grid-template-columns:1.2fr 1fr}
+.service-card.photo-card img{aspect-ratio:auto;height:100%;min-height:280px}
+.service-card.photo-card>div{display:flex;flex-direction:column;justify-content:center}
+.service-card.photo-card p{flex:0;margin-bottom:18px}
+.final-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.outline-light{border:1px solid #ffffffa6;color:#fff;margin-top:5px}
+.outline-light:hover{background:#ffffff1f}
+.quote-alt a{color:#ff6570;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.quote-form [aria-invalid=true]{border-color:#ff6570}
+@media(max-width:1050px){.aud-card{min-height:500px}.aud-body h3{font-size:30px}.media-split{gap:40px}}
+@media(max-width:760px){.hero-trade{font-size:12px;margin-top:16px}.audience,.truck-cards,.media-split{grid-template-columns:1fr;gap:15px}.media-split{gap:24px}.media-split.reverse .media-photo{order:0}.aud-card{min-height:520px;border-radius:22px}.aud-body{padding:24px}.aud-body h3{font-size:28px}.fleet-grid{grid-template-columns:1fr;gap:15px}.fleet-b{grid-row:auto;aspect-ratio:4/5}.service-card.photo-card{grid-template-columns:1fr}.service-card.photo-card img{min-height:0;aspect-ratio:16/10}.photo-card>div{padding:22px}.final-actions{flex-direction:column;align-items:center}}
+.page-hero>img.hero-img{position:absolute;inset:0}
+.photo-card img,.fleet-grid img,.media-photo img{height:auto}.fleet-grid img,.media-photo img{height:100%}.photo-card img{aspect-ratio:16/10}
+@media(max-width:760px){.aud-card{display:block;min-height:0}.aud-card picture,.aud-card>img{position:relative;display:block;height:220px}.aud-card picture img{height:100%}.aud-card:after{display:none}.aud-body{background:linear-gradient(145deg,#1e2022,#141516)}.hero-trade{background:#101112d9}}

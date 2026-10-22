@@ -76,3 +76,12 @@ Assistance prompt: photorealistic close-up of a recovery technician's gloved han
 - `noindex` removed; canonicals point to the business domain; sitemap.xml added.
 - QA: 616 internal links, anchors and images checked with none broken; one H1 per page; no console errors; no horizontal overflow at 1280px or 390px. Header, dropdown, mobile menu, service pages, contact and home reviews were inspected visually.
 - To confirm with the business: the original About page says the company was set up 10 years ago, while other pages say over 20 years. The new site uses "over 20 years' recovery experience".
+
+## Update — fleet photos and commercial page (22 October 2026)
+
+- Added four real fleet photos (car transporter x2, Scania front, flatbed at the docks), cropped and compressed to responsive WebP files (62–298 KB).
+- New page `/commercial-vehicle-transport/` for dealerships, importers and fleets: dock collections, dealer transfers, transporter vs flatbed, process, trade quote form, FAQ. Service + BusinessAudience + FAQ JSON-LD; added to sitemap.
+- Home page: "For drivers / For businesses" section, a "For business" link in the hero and a fleet gallery. "For business" added to the main menu, Services dropdown and footer on every page.
+- Towing page hero now uses the real flatbed photo; About page shows the fleet gallery.
+- QA: 14 pages, 770 internal references, none broken; one H1 per page; no console errors or horizontal overflow at 1280px and 390px; trade form validation checked.
+- Transporter capacity confirmed by the business: up to six cars per load.

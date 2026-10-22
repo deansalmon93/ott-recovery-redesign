@@ -8,6 +8,7 @@ Responsive static website for OTT Recovery Breakdown: the redesigned home page p
 |---|---|
 | `/` | Home |
 | `/breakdown-services/` | All services |
+| `/commercial-vehicle-transport/` | For business: dock collections, dealer transfers, multi-car transport |
 | `/breakdown-assistance/` | Breakdown assistance |
 | `/breakdown-recovery/` | Breakdown recovery |
 | `/towing/` | Towing service |
@@ -34,7 +35,7 @@ The header, menu and footer are repeated in each page's HTML. If you change one,
 
 ## Contact form
 
-The quote form on `/contact/` opens a pre-filled email to info@ottrecoverybreakdown.ie in the visitor's email app. It has no server and stores nothing.
+The quote forms on `/contact/` and `/commercial-vehicle-transport/` open a pre-filled email to info@ottrecoverybreakdown.ie in the visitor's email app. It has no server and stores nothing.
 
 ## SEO
 
@@ -45,4 +46,4 @@ The quote form on `/contact/` opens a pre-filled email to info@ottrecoverybreakd
 
 ## Assets
 
-The OTT logo belongs to its owner (`logo.png` is a transparent version of `logo.jpg`). Truck and battery photographs are AI-created illustrations.
+The OTT logo belongs to its owner (`logo.png` is a transparent version of `logo.jpg`). The `fleet-*.webp` photos are real OTT vehicles. The red truck (`truck-*.webp`) and battery (`assistance-*.webp`) images are AI-created illustrations.
