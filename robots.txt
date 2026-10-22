@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-# This redesign preview uses page-level noindex until migrated to the business domain.
+
+Sitemap: https://www.ottrecoverybreakdown.ie/sitemap.xml

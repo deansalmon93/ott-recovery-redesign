@@ -1,21 +1,48 @@
 # OTT Recovery redesign
 
-Responsive static website redesign with the original logo, generated branded imagery, service tabs, FAQs, mobile navigation and click-to-call buttons.
+Responsive static website for OTT Recovery Breakdown: the redesigned home page plus every page from the original site, all sharing the same header, navigation, footer, colours and typography.
+
+## Pages
+
+| Path | Page |
+|---|---|
+| `/` | Home |
+| `/breakdown-services/` | All services |
+| `/breakdown-assistance/` | Breakdown assistance |
+| `/breakdown-recovery/` | Breakdown recovery |
+| `/towing/` | Towing service |
+| `/tow-truck/` | Tow truck |
+| `/accident-recovery/` | Accident recovery |
+| `/car-jump-start/` | Car jump start |
+| `/battery-replacement/` | Battery replacement |
+| `/flat-tyre-change/` | Flat tyre change |
+| `/wrong-fuel-replacement/` | Wrong fuel replacement |
+| `/about-ott-recovery-breakdown/` | About |
+| `/contact/` | Contact and quote request |
+
+Paths match the original site, so existing Google rankings and links carry over when this replaces it. The original "News" page had no posts and has not been recreated.
 
 ## Run locally
 
-Serve this directory using any static HTTP server, for example `python -m http.server 8000`, then open http://localhost:8000.
+Serve this folder with any static server, e.g. `python -m http.server 8000`, then open http://localhost:8000. Opening the files directly by double-clicking won't follow the folder links — use a server.
 
-No package installation or build step is required. Keep all files in the same directory for this GitHub edition. The Sites edition uses an assets subdirectory; page behavior and styling are equivalent.
+No build step is required to host the site. All pages share `style.css` and `app.js`.
 
-## SEO and launch
+## Editing
 
-Read SEO-and-testing-report.md. This is a review version: noindex is intentional, and the canonical points to the existing business page. Before replacing the original production page, update social image URLs to match the chosen hosting path and complete the deployment checks in the report.
+The header, menu and footer are repeated in each page's HTML. If you change one, change it on every page (search and replace across the folder works well).
 
-## Verification
+## Contact form
 
-Desktop 1280px and responsive 390px, 320px and 768px viewports inspected. Service tabs, keyboard navigation, mobile menu, FAQs and telephone targets checked. No physical-device or field Core Web Vitals certification claimed.
+The quote form on `/contact/` opens a pre-filled email to info@ottrecoverybreakdown.ie in the visitor's email app. It has no server and stores nothing.
+
+## SEO
+
+- Each page has its own title, description, canonical URL (on www.ottrecoverybreakdown.ie), Open Graph tags and JSON-LD (Organization, Service, Breadcrumb, FAQ).
+- `sitemap.xml` lists every page; `robots.txt` points to it.
+- Pages are indexable. If you host a preview copy elsewhere, the canonical tags point Google at the main domain.
+- See SEO-and-testing-report.md for launch checks.
 
 ## Assets
 
-The original OTT logo belongs to its owner. Truck and battery assistance photographs are AI-created illustrations. No license is granted for third-party branding by this repository.
+The OTT logo belongs to its owner (`logo.png` is a transparent version of `logo.jpg`). Truck and battery photographs are AI-created illustrations.

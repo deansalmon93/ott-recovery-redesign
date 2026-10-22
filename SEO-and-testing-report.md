@@ -66,3 +66,13 @@ Used the built-in image generation tool. Full-size branded truck: `ott-branded-r
 Hero prompt: photorealistic premium roadside recovery image; modern red flatbed carrying a graphite car in an Irish rural layby at blue hour; amber beacons, damp asphalt, atmospheric countryside, charcoal/red palette and left-side negative space. Edit: preserve the scene and apply the supplied OTT Towing Services artwork as perspective-correct decals on the cab door and front panel, without the reference image's black square background.
 
 Assistance prompt: photorealistic close-up of a recovery technician's gloved hands connecting a red battery jump-start clamp in a safe layby, dark/red workwear, Irish greenery, moody shadows, soft depth of field, no added text or logos.
+
+## Update — full site build (22 October 2026)
+
+- Home page now covers all services and every county (Dublin, Meath, Kildare, Wicklow, Louth, nationwide). It adds the original home page facts: quotes from €50, free scrap car removal, NCT towing, motorbike/van/caravan/off-road/boat recovery and car lockout help.
+- Added 12 pages at the original URL paths: services overview, nine service pages, About and Contact. Content is taken from the original site, rewritten for clarity, with typos and duplicated text removed.
+- Shared header with a Services dropdown (hover, focus and click; expands inside the mobile menu), active-page highlighting, breadcrumbs, a shared four-column footer and the mobile call bar on every page.
+- All links now point inside the new site rather than the old one.
+- `noindex` removed; canonicals point to the business domain; sitemap.xml added.
+- QA: 616 internal links, anchors and images checked with none broken; one H1 per page; no console errors; no horizontal overflow at 1280px or 390px. Header, dropdown, mobile menu, service pages, contact and home reviews were inspected visually.
+- To confirm with the business: the original About page says the company was set up 10 years ago, while other pages say over 20 years. The new site uses "over 20 years' recovery experience".
