@@ -85,3 +85,35 @@ Assistance prompt: photorealistic close-up of a recovery technician's gloved han
 - Towing page hero now uses the real flatbed photo; About page shows the fleet gallery.
 - QA: 14 pages, 770 internal references, none broken; one H1 per page; no console errors or horizontal overflow at 1280px and 390px; trade form validation checked.
 - Transporter capacity confirmed by the business: up to six cars per load.
+
+## Update — SEO for the commercial service (22 October 2026)
+
+Target searches: "car transport Dublin", "trade car transport Ireland", "car transporter Dublin", "vehicle transport Ireland", "Dublin Port car collection", "dealer car transfers".
+
+On-site changes:
+- `/commercial-vehicle-transport/` title is now "Trade Car Transport Dublin & Ireland | Car Transporter | OTT" (60 characters, so Google shows it in full). The meta description (155 characters) names the motor trade, up to 6 cars per load, Dublin Port, dealer transfers and Ireland-wide delivery.
+- H1 changed to "Trade car transport." Section labels now carry search terms (Dublin Port collections, car transporter or flatbed, vehicle delivery across Ireland), and the quote heading reads "Get a trade car transport quote."
+- New "Dublin based. Delivering nationwide." section naming the counties and towns served, for location searches.
+- FAQ rewritten around real search questions ("How much does car transport cost in Ireland?", "How many cars can your car transporter carry?", "Do you collect imported cars from Dublin Port?"), marked up as FAQPage.
+- Service structured data: "Trade car transport" with alternate names (car transporter service, vehicle transport, dealer car transfers), BusinessAudience, Ireland as service area and a catalogue of 7 trade services.
+- Business structured data on every page upgraded from Organization to AutomotiveBusiness (a LocalBusiness type) with locality (Rush, Co. Dublin), 24/7 opening hours, service area and both service lines.
+- Internal links: footer on every page now says "trade car transport" and links to the page. The home page card and link use the same wording, and the footer Company link reads "Trade car transport".
+- Dublin Port named in the flatbed photo's alt text.
+
+Off-site steps (need the owner's accounts — these matter as much as the page itself):
+1. Google Business Profile: add the "Car transport service"/"Vehicle shipping agent" type category if available, list "Trade car transport", "Dublin Port collections" and "Dealer transfers" as services, and post the fleet photos.
+2. Once the site is on ottrecoverybreakdown.ie, submit sitemap.xml in Google Search Console and request indexing for /commercial-vehicle-transport/.
+3. Ask trade customers (dealers, importers) for Google reviews that mention the job, e.g. "moved 6 cars from Dublin Port".
+4. List the business in Irish trade directories (Golden Pages "car transport", motor trade associations) with a link to the commercial page.
+5. Keep the GitHub preview from competing with the live site: the canonical tags already point Google at ottrecoverybreakdown.ie.
+
+To confirm with the business: that dock collections are from Dublin Port (the page now names it).
+
+## Update — HGV driver recruitment (22 October 2026)
+
+- New page `/careers/` ("HGV drivers wanted"): the role, requirements, why drive for OTT, an application form (opens a pre-filled email; applicants attach their CV) and an FAQ.
+- JobPosting structured data (title "HGV Driver – Car Transporter", Rush, Co. Dublin, qualifications) so the job can appear in Google's job listings. Google needs the page on the live domain and indexed for that. Also BreadcrumbList and FAQPage.
+- "We're hiring" section on the business page; "HGV driver jobs · Hiring" link in the footer of every page; added to sitemap.
+- QA: 15 pages, 854 internal references, none broken; JSON-LD valid on every page; application form validation checked; no overflow at 1280px or 390px.
+- To confirm with the business: licence category required (C or C+E), full-time or part-time, pay. The page currently asks applicants for their category and doesn't state hours or pay. Adding pay (baseSalary) and employment type would improve the Google Jobs listing.
+- When the role is filled: remove the page, or add a `validThrough` date to the JobPosting, so Google stops listing it.
