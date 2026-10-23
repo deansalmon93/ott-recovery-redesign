@@ -150,3 +150,14 @@
 .careers-hero .real-photo{object-position:center 45%}
 @media(max-width:1050px){.hiring-band{gap:36px;padding:30px}}
 @media(max-width:760px){.hiring-band{grid-template-columns:1fr;gap:22px;padding:18px 18px 24px}.hiring-photo{aspect-ratio:16/11}}
+/* Local area pages and 404 */
+.area-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:4px 0 18px}
+.area-links a{font-size:13px;font-weight:600;color:#ff6570}
+.area-links a:hover{text-decoration:underline;text-underline-offset:3px}
+.area-link{margin-top:18px}
+.notfound{padding-top:170px;padding-bottom:70px}
+.notfound h1{font-size:clamp(46px,6vw,80px);line-height:.99;margin-bottom:24px}
+.notfound h1 em{font-style:normal;color:#f13b48}
+.notfound>p{font-size:16px;max-width:520px}
+.nf-links{margin-top:30px}
+@media(max-width:760px){.notfound{padding-top:130px}}

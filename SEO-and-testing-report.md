@@ -117,3 +117,25 @@ To confirm with the business: that dock collections are from Dublin Port (the pa
 - QA: 15 pages, 854 internal references, none broken; JSON-LD valid on every page; application form validation checked; no overflow at 1280px or 390px.
 - To confirm with the business: licence category required (C or C+E), full-time or part-time, pay. The page currently asks applicants for their category and doesn't state hours or pay. Adding pay (baseSalary) and employment type would improve the Google Jobs listing.
 - When the role is filled: remove the page, or add a `validThrough` date to the JobPosting, so Google stops listing it.
+
+## Update — old site address map and redirects (23 October 2026)
+
+Source: the old site's public sitemap (sitemap_index.xml → page-sitemap.xml, 14 pages) plus pages linked from them.
+
+| Old address | On the new site |
+|---|---|
+| 12 service/info pages (/, /towing/, /tow-truck/, /breakdown-recovery/, etc.) | Same address, new page |
+| /breakdown-recovery-north-dublin/ | Rebuilt as a local page (indexed on the old site) |
+| /breakdown-recovery-swords/ | Rebuilt as a local page (indexed on the old site) |
+| /breakdown-recovery-skerries/, -balbriggan/, -coolock/, -clontarf/ | 301 redirect to /breakdown-recovery-north-dublin/ (these were set to noindex on the old site, so they had no search value) |
+| /blog/ (empty "News" page), /news/, /feed/, /category/*, /author/* | 301 redirect to the home page |
+
+- Redirects live in `_redirects`, which Cloudflare reads automatically. GitHub Pages ignores it.
+- New `404.html` "page not found" page (noindex). Without it, Cloudflare would serve the home page for every unknown address, which Google treats as an error.
+- The local pages fix the old pages' mixed phone numbers (they showed 085 and 086); the new pages use 086 195 2598 throughout.
+- Old pages say "over 10 years"; the new site says "20+ years" — confirm with the owner.
+- Old WordPress image addresses (/wp-content/uploads/…) now show the not-found page. These only matter for Google Images and can be ignored.
+
+At the domain switch (Cloudflare dashboard, not in the files):
+- Add a redirect rule from ottrecoverybreakdown.ie to www.ottrecoverybreakdown.ie, so both work and the canonical www version is the one Google keeps.
+- Deploy the folder version (ott-recovery-site.zip), not the flat GitHub version, so the original addresses work.
